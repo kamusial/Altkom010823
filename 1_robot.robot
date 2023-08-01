@@ -8,3 +8,5 @@ Library  SeleniumLibrary
 
 
 *** Test Cases ***
+Wikipedia
+    Open Browser    https://pl.wikipedia.org    chrome
