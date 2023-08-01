@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230801 14:18:56.634" rpa="false" schemaversion="3">
+<suite id="s1" name="1 Robot" source="C:\Users\vdi-student\Desktop\Altkom010823\1_robot.robot">
+<test id="s1-t1" name="Wikipedia" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://pl.wikipedia.org</arg>
+<arg>chrome</arg>
+<arg>executable_path=C:/chromedriver/chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230801 14:18:56.889" level="INFO">Opening browser 'chrome' to base url 'https://pl.wikipedia.org'.</msg>
+<status status="PASS" starttime="20230801 14:18:56.889" endtime="20230801 14:18:58.699"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230801 14:18:59.705" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230801 14:18:58.705" endtime="20230801 14:18:59.705"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:pt-login-2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230801 14:18:59.707" level="INFO">Clicking element 'id:pt-login-2'.</msg>
+<status status="PASS" starttime="20230801 14:18:59.706" endtime="20230801 14:19:00.160"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:wpName1</arg>
+<arg>RobotTests</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230801 14:19:00.161" level="INFO">Typing text 'RobotTests' into text field 'id:wpName1'.</msg>
+<status status="PASS" starttime="20230801 14:19:00.160" endtime="20230801 14:19:00.260"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:wpPassword1</arg>
+<arg>RobotFramework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230801 14:19:00.261" level="INFO">Typing text 'RobotFramework' into text field 'id:wpPassword1'.</msg>
+<status status="PASS" starttime="20230801 14:19:00.261" endtime="20230801 14:19:00.361"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:wpRemember</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230801 14:19:00.362" level="INFO">Selecting checkbox 'id:wpRemember'.</msg>
+<status status="PASS" starttime="20230801 14:19:00.361" endtime="20230801 14:19:00.499"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230801 14:19:03.505" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230801 14:19:00.504" endtime="20230801 14:19:03.505"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230801 14:19:03.505" endtime="20230801 14:19:05.645"/>
+</kw>
+<status status="PASS" starttime="20230801 14:18:56.889" endtime="20230801 14:19:05.645"/>
+</test>
+<status status="PASS" starttime="20230801 14:18:56.634" endtime="20230801 14:19:05.645"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="1 Robot">1 Robot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
